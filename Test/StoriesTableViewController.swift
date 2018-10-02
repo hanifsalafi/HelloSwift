@@ -42,7 +42,7 @@ class StoriesTableViewController: UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
         
 //      To limit number of rows
-        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
+//        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
        
         let headline = headlines[indexPath.row]
         cell.textLabel?.text = headline.title
@@ -59,5 +59,19 @@ class StoriesTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle:   UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            headlines.remove(at: indexPath.row)
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .middle)
+            tableView.endUpdates()
+            tableView.reloadData()
+        }
     }
 }

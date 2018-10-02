@@ -12,8 +12,8 @@
         <!--Home-->
         <scene sceneID="qVH-zU-0fQ">
             <objects>
-                <tableViewController storyboardIdentifier="StoriesTableViewController" title="Home" id="NzY-hN-nWS" customClass="StoriesTableViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="50" sectionFooterHeight="28" id="xSY-pC-cDp">
+                <tableViewController storyboardIdentifier="StoriesTableViewController" title="Home" id="NzY-hN-nWS" customClass="StoriesTableViewController" customModule="TableViewProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="50" sectionFooterHeight="28" id="xSY-pC-cDp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="50" width="320" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="21J-39-p3X" id="XdP-h9-TrY">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xt1-71-Htr">
@@ -61,7 +61,7 @@
         <!--View Controller-->
         <scene sceneID="N7F-XX-QdE">
             <objects>
-                <viewController storyboardIdentifier="DetailTableViewController" id="c7N-bc-6bZ" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailTableViewController" id="c7N-bc-6bZ" customClass="ViewController" customModule="TableViewProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C1p-tW-liS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
